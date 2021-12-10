@@ -13,6 +13,7 @@ CREATE TABLE animals(
 
 ALTER TABLE animals 
   Add species TEXT;
+<<<<<<< HEAD
 
 CREATE TABLE owners(
   id SERIAL PRIMARY KEY,
@@ -38,3 +39,5 @@ ALTER TABLE animals ADD COLUMN owner_id INT,
   ADD CONSTRAINT fk_owners
   FOREIGN KEY (owner_id)
   REFERENCES owners (id);
+=======
+>>>>>>> development

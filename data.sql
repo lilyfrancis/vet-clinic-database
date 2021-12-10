@@ -9,6 +9,7 @@ INSERT INTO animals (id,name,date_of_birth,escape_attempts,neutered,weight_kg) V
 INSERT INTO animals (id,name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES (7, 'Squirtle', '1993-04-02', 3, FALSE, -12.13);
 INSERT INTO animals (id,name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES (8, 'Angemon', '2005-06-12', 1, TRUE, -45);
 INSERT INTO animals (id,name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES (9, 'Boarmon', '2005-06-07', 7, TRUE, 20.4);
+<<<<<<< HEAD
 INSERT INTO animals (id,name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES (10, 'Blossom', '1998-10-13', 3, TRUE, 17);
 
 INSERT INTO owners (full_name,age) VALUES ('Sam Smith', 34), ('Jennifer Orwell', 19), ('Bob', 45), ('Melody', 77), ('Dean Winchester', 14), ('Jodie Whittaker', 38);
@@ -25,3 +26,6 @@ UPDATE animals SET owner_id=4 WHERE name IN ('Charmander','Squirtle','Blossom');
 UPDATE animals SET owner_id=5 WHERE name IN ('Angemon','Boarmon');
 
 UPDATE owners SET full_name='Melody Pond' WHERE id=4;
+=======
+INSERT INTO animals (id,name,date_of_birth,escape_attempts,neutered,weight_kg) VALUES (10, 'Blossom', '1998-10-13', 3, TRUE, 17);
+>>>>>>> development
