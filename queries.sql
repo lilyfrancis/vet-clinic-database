@@ -125,17 +125,3 @@ LEFT JOIN specializations s
 ON s.vets_id=vets.id 
 WHERE species_id IS NULL;
 
-
-SELECT species.name, COUNT(species.name) 
-AS count_species 
-FROM vets 
-LEFT JOIN specializations s 
-ON s.vets_id=vets.id 
-JOIN animals 
-ON animals.species_id=s.species_id 
-JOIN species 
-ON species.id=s.species_id 
-WHERE vets.name='Maisy Smith' 
-GROUP BY species.name 
-ORDER BY count_species 
-DESC LIMIT 1;
